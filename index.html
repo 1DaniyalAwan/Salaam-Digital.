@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            Salaam Digital
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+<a href="#" class="logo">Salaam Digital</a>
+<div class="menu-toggle">&#9776;</div>
+<nav class="navbar">
+<a href="#" class="active">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+        </header>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navbar = document.querySelector('.navbar');
+        
+                menuToggle.addEventListener('click', function () {
+                    navbar.classList.toggle('show');
+                });
+            });
+        </script>
+        
+        <section class="home">
+            <div class="home-content">
+                <h1>Salaam Digital</h1>
+                <h3>Solution To All Your Digital Problems</h3>
+                <br>
+                <h3 style="color: #ededed;">Who Are We</h3>
+                <p>We are a digital transformation and software development company that provides cutting edge digital solutions. We combine proven methodologies, business domain knowledge, and technology expertise of highly skilled professionals to deliver high-quality solutions. Since 2004 we have been a visionary and a reliable partner for major national and international organisations.</p>
+                    <div class="btn-box">
+                        <a href="services.html">Hire Me</a>
+                        <a href="contact.html">Let's Talk</a>
+                    </div>
+            </div>
+
+            <div class="home-sci">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+
+
+            <div class="home-image">
+                <img src="pic.png">
+            </div>
+
+        </section>
+    </body>
+</html>

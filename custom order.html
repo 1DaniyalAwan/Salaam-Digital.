@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            Custom Order
+        </title>
+        <link rel="stylesheet" href="style4.css">
+    </head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Salaam Digital</a>
+        <div class="menu-toggle">&#9776;</div>
+        <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        </nav>
+                </header>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        const menuToggle = document.querySelector('.menu-toggle');
+                        const navbar = document.querySelector('.navbar');
+                
+                        menuToggle.addEventListener('click', function () {
+                            navbar.classList.toggle('show');
+                        });
+                    });
+                </script>
+                
+<br>
+<br>
+<br>
+<br>
+<br>
+                <div class="container">
+                    <form action="https://formspree.io/f/xdoqnbgy" method="post" onSubmit="alert('We will shortly connect with you');">
+                        <h3>Make Your Order</h3>
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <input type="text" name="Phone no" id="phone" placeholder="Phone Number" required>
+                        <textarea id="requirement" name="Requirement" row="4" placeholder="Your Requirements" required></textarea>
+                        <input type="text" name="Budget" id="budget" placeholder="Your Budget = $000" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+    </body>
+</html>
